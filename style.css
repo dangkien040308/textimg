@@ -1,0 +1,54 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter&family=Lobster&family=Oswald:wght@500&family=Pacifico&family=Roboto&display=swap');
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0;
+}
+
+.box {
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.box .right ,
+.box .left {
+    width: 100%;
+    height: 100%;
+    background-image: url('image\ \(4\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box .left {
+    clip-path: polygon(
+        0 0 , 50% 0 , 50% 100% , 0 100%
+    );
+}
+.box .right .content {
+    width: 50%;
+
+}
+.box .right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 68px;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Oswald', sans-serif;
+    background-color: #183570 ;
+}
+.box .left ,
+.box .right {
+    position: absolute;
+    top : 0 ;
+    left : 0 ;
+}
